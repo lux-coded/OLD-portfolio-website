@@ -1,18 +1,20 @@
 import React from 'react';
 import Nav from '../Nav/Nav.js';
 import Header from '../Header/Header.js';
-import './Home.scss';
+import './Main.scss';
 
-class Home extends React.Component {
+class Main extends React.Component {
 
   render() {
     return (
       <div>
         <Nav />
         <Header />
+        <main>
+        </main>
       </div>
     );
   }
 }
 
-export default Home;
+export default Main;

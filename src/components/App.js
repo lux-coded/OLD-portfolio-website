@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './Home/Home.js';
+import Main from './Main/Main.js';
 
 class App extends React.Component {
 
   render() {
-    return <div><h1><Home /></h1></div>;
+    return <div><h1><Main /></h1></div>;
   }
 }
 
