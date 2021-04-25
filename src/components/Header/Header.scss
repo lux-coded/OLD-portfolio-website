@@ -20,3 +20,12 @@ header {
     color: $terciary-text-color;
   }
 }
+
+@media (max-width: 900px) {
+  header {
+    padding: 20% 10%;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

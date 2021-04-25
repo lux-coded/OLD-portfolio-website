@@ -1,6 +1,10 @@
 import React from 'react';
 import Nav from '../Nav/Nav.js';
 import Header from '../Header/Header.js';
+import Work from '../Work/Work.js';
+import Skills from '../Skills/Skills.js';
+import About from '../About/About.js';
+import Contact from '../Contact/Contact.js';
 import './Main.scss';
 
 class Main extends React.Component {
@@ -11,6 +15,10 @@ class Main extends React.Component {
         <Nav />
         <Header />
         <main>
+          <Work />
+          <Skills />
+          <About />
+          <Contact />
         </main>
       </div>
     );

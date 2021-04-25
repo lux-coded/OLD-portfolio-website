@@ -1,15 +1,18 @@
 @import '../../styles/variables.scss';
 
 nav {
-  // position: absolute;
+  // position: fixed;
+  // width: 80%;
   display: grid;
-  background-color: $background-color-dim;
+  // display: flex;
+  // justify-content: space-between;
   grid-template-columns: repeat(5, 1fr);
+  background-color: $background-color-dim;
   text-align: center;
   font-size: 1rem;
   margin: 0 15%;
   margin-top: 2rem;
-  padding: 0.5rem 5%;
+  padding: 0.5rem 2%;
   border-radius: 5px;
   align-items: center;
   text-transform: lowercase;
@@ -21,15 +24,32 @@ nav {
 
   h1 {
     text-transform: uppercase;
+    // &:hover {
+    //   color: $background-color-dark;
+    //   background-color: $background-color-light;
+    //   cursor: pointer;
+    // }
   }
 
-  p {
+  a {
     font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
     color: $terciary-text-color;
     transition: $main-transition;
+    text-decoration: none;
     &:hover {
       color: $main-text-color;
+      background-color: $secondary-text-color;
       cursor: pointer;
     }
   }
+}
+
+@media (max-width: 900px) {
+    nav {
+      margin: 0 5%;
+      margin-top: 1rem;
+      // width: 100%;
+    }
 }
