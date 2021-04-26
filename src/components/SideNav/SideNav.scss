@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.hidden {
+  visibility: hidden;
+}
+
+#side-nav {
+  display: grid;
+  font-size: 1.2rem;
+  // width: 12rem;
+  background-color: $background-color-dim;
+  position: fixed;
+  top: 5.8rem;
+  right: 15%;
+  // transition: $main-transition;
+
+  #back-to-top {
+    text-transform: none;
+  }
+
+  a {
+    // font-weight: 600;
+    // padding: 10px 20px;
+    // border-radius: 5px;
+    // color: $terciary-text-color;
+    // transition: $main-transition;
+    // text-decoration: none;
+
+    &:hover {
+      color: $main-text-color;
+      background-color: $secondary-text-color;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $background-color-dark;
+      background-color: $background-color-light;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #side-nav {
+    top: 4.2rem;
+    right: 10%;
+  }
+}

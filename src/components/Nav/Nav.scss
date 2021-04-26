@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
-nav {
-  // position: fixed;
+#nav {
+  position: relative;
   // width: 80%;
   display: grid;
   // display: flex;
@@ -43,13 +43,66 @@ nav {
       background-color: $secondary-text-color;
       cursor: pointer;
     }
+
+    &:active {
+      color: $background-color-dark;
+      background-color: $background-color-light;
+      cursor: pointer;
+    }
   }
+
+  .burger-icon {
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: $terciary-text-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-text-color;
+      background-color: $secondary-text-color;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $background-color-dark;
+      background-color: $background-color-light;
+      cursor: pointer;
+    }
+  }
+
 }
 
 @media (max-width: 900px) {
-    nav {
-      margin: 0 5%;
+    #nav {
+      margin: 0 10%;
       margin-top: 1rem;
-      // width: 100%;
+      // position: fixed;
+
+      a {
+        transition: none;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .burger-icon {
+        // display: visible;
+        position: absolute;
+        right: 5%;
+      }
     }
+
 }
+
+@media (min-width: 900px) {
+  .burger-icon {
+    display: none;
+  }
+}
+
+// #nav {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 2rem;
+// }
