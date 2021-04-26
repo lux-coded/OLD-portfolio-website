@@ -9,10 +9,6 @@ class Nav extends React.Component {
     sideNav.classList.toggle('hidden');
   }
 
-  scrollToTop() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <nav id='nav'>
@@ -23,7 +19,7 @@ class Nav extends React.Component {
           .skills()
         </a>
         <h1>
-          <a id='logo' onClick={this.scrollToTop}>ls</a>
+          <a id='logo' href='/'>ls</a>
         </h1>
         <a href='#about-section' className='nav-links'>
           .about()
