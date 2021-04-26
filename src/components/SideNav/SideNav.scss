@@ -7,12 +7,11 @@
 #side-nav {
   display: grid;
   font-size: 1.2rem;
-  // width: 12rem;
   background-color: $background-color-dim;
+  border-radius: 5px;
   position: fixed;
   top: 5.8rem;
   right: 15%;
-  // transition: $main-transition;
 
   #back-to-top {
     text-transform: none;
