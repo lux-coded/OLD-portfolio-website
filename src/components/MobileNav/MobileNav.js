@@ -17,7 +17,9 @@ class MobileNav extends React.Component {
       <div id='mobile-nav'>
 
         <div id='mobile-nav-menu' className='hidden'>
-          <a id='back-to-top' onClick={this.scrollToTop}>Back To Top</a>
+          <span id='back-to-top' class="material-icons" onClick={this.scrollToTop}>
+            arrow_upward
+          </span>
           <a href='#work-section' className='side-nav-links'>
             .work()
           </a>
