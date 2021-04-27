@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 #work-section {
   padding: 5% 0%;
   height: 2000px;
@@ -7,5 +9,39 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+  }
+}
+
+.project-card-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.project-card {
+  // background-color: $background-color-dim;
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.project-card-button {
+  background-color: $background-color-dark;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: $main-transition;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $terciary-text-color;
+  }
+
+  &:active {
+    background-color: $background-color-light;
+    color: $background-color-dark;
   }
 }

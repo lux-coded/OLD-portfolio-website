@@ -7,7 +7,8 @@
   // display: flex;
   // justify-content: space-between;
   grid-template-columns: repeat(5, 1fr);
-  background-color: $background-color-dim;
+  // background-color: $background-color-dim;
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
   text-align: center;
   font-size: 1rem;
   margin: 0 15%;
@@ -36,12 +37,13 @@
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
-    color: $terciary-text-color;
+    color: $background-color-dark;
     transition: $main-transition;
     text-decoration: none;
     &:hover {
       color: $main-text-color;
-      background-color: $secondary-text-color;
+      // background-color: $secondary-text-color;
+      background-color: rgba(0, 0, 0, 0.5);
       cursor: pointer;
     }
 
