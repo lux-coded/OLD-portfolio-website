@@ -8,7 +8,7 @@
   // justify-content: space-between;
   grid-template-columns: repeat(5, 1fr);
   // background-color: $background-color-dim;
-  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  background: $main-gradient;
   text-align: center;
   font-size: 1rem;
   margin: 0 15%;
@@ -26,30 +26,27 @@
   h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
-    // &:hover {
-    //   color: $background-color-dark;
-    //   background-color: $background-color-light;
-    //   cursor: pointer;
-    // }
   }
 
   a {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
+    // color: $terciary-text-color;
     color: $background-color-dark;
     transition: $main-transition;
     text-decoration: none;
     &:hover {
       color: $main-text-color;
       // background-color: $secondary-text-color;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $transparent-dark;
       cursor: pointer;
     }
 
     &:active {
       color: $background-color-dark;
-      background-color: $background-color-light;
+      // background-color: $background-color-light;
+      background-color: $transparent-light;
       cursor: pointer;
     }
   }
@@ -57,18 +54,19 @@
   .burger-icon {
     padding: 0.5rem;
     border-radius: 5px;
-    color: $terciary-text-color;
+    background-color: rgba(255, 255, 255, 0);
+    color: $main-text-color;
     cursor: pointer;
 
     &:hover {
-      color: $main-text-color;
-      background-color: $secondary-text-color;
+      color: $background-color-dark;
+      background-color: $transparent-light;
       cursor: pointer;
     }
 
     &:active {
-      color: $background-color-dark;
-      background-color: $background-color-light;
+      color: $main-text-color;
+      background-color: $transparent-dark;
       cursor: pointer;
     }
   }

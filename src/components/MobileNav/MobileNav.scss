@@ -7,10 +7,27 @@
 #mobile-nav {
   position: fixed;
   text-align: center;
-  // width: 5rem;
   bottom: 2rem;
-  right: 2rem;
+  right: 5%;
   color: white;
+
+  .burger-icon {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: $nav-background;
+    color: $main-text-color;
+
+    &:hover {
+      color: $background-color-dark;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $background-color-dark;
+      background-color: $background-color-light;
+      cursor: pointer;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -23,27 +40,29 @@
   position: absolute;
   right: 0rem;
   bottom: 3rem;
-  background-color: $background-color-dim;
+  background: $nav-background;
   border-radius: 5px;
+
+
 
   a, span {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
-    color: $terciary-text-color;
+    color: $background-color-dark;
 
     text-decoration: none;
 
     &:hover {
-      color: $main-text-color;
-      background-color: $secondary-text-color;
+      color: $background-color-dark;
+      background-color: $transparent-light;
       cursor: pointer;
       transition: $main-transition;
     }
 
     &:active {
-      color: $background-color-dark;
-      background-color: $background-color-light;
+      color: $main-text-color;
+      background-color: $transparent-dark;
       cursor: pointer;
     }
   }
@@ -52,24 +71,4 @@
 #back-to-top {
   text-transform: none;
 
-}
-
-.burger-icon {
-  padding: 0.5rem;
-  border-radius: 5px;
-  color: $terciary-text-color;
-  background-color: $background-color-dim;
-  cursor: pointer;
-
-  &:hover {
-    color: $main-text-color;
-    background-color: $secondary-text-color;
-    cursor: pointer;
-  }
-
-  &:active {
-    color: $background-color-dark;
-    background-color: $background-color-light;
-    cursor: pointer;
-  }
 }

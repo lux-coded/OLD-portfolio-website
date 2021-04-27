@@ -10,13 +10,23 @@ class Work extends React.Component {
         <div className='project-card-container'>
           <article className='project-card'>
             <h2>SnackTime</h2>
-            <button className='project-card-button'>View</button>
-            <button className='project-card-button'>Code</button>
+            <button className='project-card-button'>
+              View
+            </button>
+            <button className='project-card-button'>
+              Code
+              {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
+            </button>
           </article>
           <article className='project-card'>
             <h2>TeamUp</h2>
-            <button className='project-card-button'>View</button>
-            <button className='project-card-button'>Code</button>
+            <button className='project-card-button'>
+              View
+            </button>
+            <button className='project-card-button'>
+              Code
+              {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
+            </button>
           </article>
         </div>
       </section>

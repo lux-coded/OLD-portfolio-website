@@ -7,11 +7,11 @@
 #side-nav {
   display: grid;
   font-size: 1.2rem;
-  background-color: $background-color-dim;
+  background: $nav-background;
   border-radius: 5px;
 
 
-  a {
+  .side-nav-links {
     // font-weight: 600;
     // padding: 10px 20px;
     // border-radius: 5px;
@@ -20,14 +20,14 @@
     // text-decoration: none;
 
     &:hover {
-      color: $main-text-color;
-      background-color: $secondary-text-color;
+      color: $background-color-dark;
+      background-color: $transparent-light;
       cursor: pointer;
     }
 
     &:active {
-      color: $background-color-dark;
-      background-color: $background-color-light;
+      color: $main-text-color;
+      background-color: $transparent-dark;
       cursor: pointer;
     }
   }

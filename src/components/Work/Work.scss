@@ -2,7 +2,6 @@
 
 #work-section {
   padding: 5% 0%;
-  height: 2000px;
 
   h1 {
     -webkit-user-select: none; /* Safari */
@@ -21,27 +20,37 @@
 
 .project-card {
   // background-color: $background-color-dim;
-  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  background: $main-gradient;
   padding: 2rem;
   border-radius: 0.5rem;
 }
 
 .project-card-button {
-  background-color: $background-color-dark;
+  background-color: $transparent-dim;
+  // width: 10rem;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
-  margin: 0 0.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   padding: 0.5rem 1rem;
   transition: $main-transition;
 
   &:hover {
     cursor: pointer;
-    background-color: $terciary-text-color;
+    background-color: $transparent-dark;
   }
 
   &:active {
-    background-color: $background-color-light;
+    background-color: $transparent-light;
     color: $background-color-dark;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 }
