@@ -2,7 +2,7 @@
 
 header {
   text-align: left;
-  padding: 10% 20%;
+  padding: 10% 15%;
   // -webkit-user-select: none; /* Safari */
   // -moz-user-select: none; /* Firefox */
   // -ms-user-select: none; /* IE10+/Edge */
@@ -10,7 +10,7 @@ header {
 
   h1 {
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5rem;
     color: $main-text-color;
   }
 
@@ -25,12 +25,12 @@ header {
   header {
     padding: 20% 5%;
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       padding: 0;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }

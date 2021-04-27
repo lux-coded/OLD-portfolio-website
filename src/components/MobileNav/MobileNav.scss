@@ -6,9 +6,9 @@
 
 #mobile-nav {
   position: fixed;
-  width: 10rem;
+  // width: 5rem;
   bottom: 2rem;
-  right: 1rem;
+  right: 2rem;
   color: white;
 
   a {
@@ -19,9 +19,9 @@
 #mobile-nav-menu {
   display: grid;
   font-size: 1.2rem;
-  position: relative;
-  right: 7.5rem;
-  bottom: 0.5rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 3rem;
   background-color: $background-color-dim;
   border-radius: 5px;
 
@@ -30,13 +30,14 @@
     padding: 10px 20px;
     border-radius: 5px;
     color: $terciary-text-color;
-    transition: $main-transition;
+
     text-decoration: none;
 
     &:hover {
       color: $main-text-color;
       background-color: $secondary-text-color;
       cursor: pointer;
+      transition: $main-transition;
     }
 
     &:active {

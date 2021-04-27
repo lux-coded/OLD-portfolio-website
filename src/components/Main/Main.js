@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav/Nav.js';
-// import MobileNav from '../MobileNav/MobileNav.js';
+import MobileNav from '../MobileNav/MobileNav.js';
 import Header from '../Header/Header.js';
 import Work from '../Work/Work.js';
 import Skills from '../Skills/Skills.js';
@@ -21,7 +21,7 @@ class Main extends React.Component {
           <About />
           <Contact />
         </main>
-        {/* <MobileNav /> */}
+        <MobileNav />
       </div>
     );
   }
