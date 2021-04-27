@@ -24,6 +24,7 @@
 
   h1 {
     text-transform: uppercase;
+    font-size: 1.5rem;
     // &:hover {
     //   color: $background-color-dark;
     //   background-color: $background-color-light;
@@ -74,11 +75,7 @@
 
 @media (max-width: 900px) {
     #nav {
-      margin: 0 10%;
-      margin-top: 1rem;
-      position: sticky;
-      position: -webkit-sticky;
-      top: 1rem;
+      margin: 1rem;
 
       #logo {
         padding: 0.5rem 1rem;

@@ -6,7 +6,7 @@ class Work extends React.Component {
   render() {
     return (
       <section id='work-section'>
-        <h3>Work</h3>
+        <h1>Work</h1>
       </section>
     );
   }

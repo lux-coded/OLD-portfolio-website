@@ -6,7 +6,7 @@ class About extends React.Component {
   render() {
     return (
       <section id='about-section'>
-        <h3>About</h3>
+        <h1>About</h1>
       </section>
     );
   }

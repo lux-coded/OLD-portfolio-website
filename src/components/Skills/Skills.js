@@ -6,7 +6,7 @@ class Skills extends React.Component {
   render() {
     return (
       <section id='skills-section'>
-        <h3>Skills</h3>
+        <h1>Skills</h1>
       </section>
     );
   }

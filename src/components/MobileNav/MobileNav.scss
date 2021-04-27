@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+
+.hidden {
+  visibility: hidden;
+}
+
+#mobile-nav {
+  position: fixed;
+  width: 10rem;
+  bottom: 2rem;
+  right: 1rem;
+  color: white;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+#mobile-nav-menu {
+  display: grid;
+  font-size: 1.2rem;
+  position: relative;
+  right: 7.5rem;
+  bottom: 0.5rem;
+  background-color: $background-color-dim;
+  border-radius: 5px;
+
+  a {
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $terciary-text-color;
+    transition: $main-transition;
+    text-decoration: none;
+
+    &:hover {
+      color: $main-text-color;
+      background-color: $secondary-text-color;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: $background-color-dark;
+      background-color: $background-color-light;
+      cursor: pointer;
+    }
+  }
+}
+
+#back-to-top {
+  text-transform: none;
+
+}
+
+.burger-icon {
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: $terciary-text-color;
+  background-color: $background-color-dim;
+  cursor: pointer;
+
+  &:hover {
+    color: $main-text-color;
+    background-color: $secondary-text-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $background-color-dark;
+    background-color: $background-color-light;
+    cursor: pointer;
+  }
+}
