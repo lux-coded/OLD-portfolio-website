@@ -10,6 +10,8 @@ class Work extends React.Component {
         <div className='project-card-container'>
           <article className='project-card'>
             <h2>SnackTime</h2>
+            <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
+            <p>A movie & TV show browsing app.</p>
             <button className='project-card-button'>
               View
             </button>
@@ -19,7 +21,33 @@ class Work extends React.Component {
             </button>
           </article>
           <article className='project-card'>
-            <h2>TeamUp</h2>
+            <h2>MyTune</h2>
+            <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
+            <p>Music browsing app.</p>
+            <button className='project-card-button'>
+              View
+            </button>
+            <button className='project-card-button'>
+              Code
+              {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
+            </button>
+          </article>
+          <article className='project-card'>
+            <h2>Bruh</h2>
+            <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
+            <p>Bruh.</p>
+            <button className='project-card-button'>
+              View
+            </button>
+            <button className='project-card-button'>
+              Code
+              {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
+            </button>
+          </article>
+          <article className='project-card'>
+            <h2>Bruh</h2>
+            <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
+            <p>Bruh.</p>
             <button className='project-card-button'>
               View
             </button>

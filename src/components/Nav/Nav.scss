@@ -38,15 +38,16 @@
     text-decoration: none;
     &:hover {
       color: $main-text-color;
-      // background-color: $secondary-text-color;
       background-color: $transparent-dark;
+      // background-color: $secondary-text-color;
       cursor: pointer;
     }
 
     &:active {
       color: $background-color-dark;
-      // background-color: $background-color-light;
       background-color: $transparent-light;
+
+      // background-color: $background-color-light;
       cursor: pointer;
     }
   }

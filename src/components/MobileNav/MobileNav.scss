@@ -56,14 +56,14 @@
 
     &:hover {
       color: $background-color-dark;
-      background-color: $transparent-light;
+      background-color: $transparent-dim;
       cursor: pointer;
       transition: $main-transition;
     }
 
     &:active {
-      color: $main-text-color;
-      background-color: $transparent-dark;
+      color: $background-color-dark;
+      background-color: $transparent-light;
       cursor: pointer;
     }
   }

@@ -23,12 +23,40 @@ header {
     color: $terciary-text-color;
   }
 
-  .header-icons {
+  .header-links {
     margin-top: 2rem;
     display: grid;
-    width: 10rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    width: 0;
+
+    .resume-button {
+      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+      // color: $background-color-dark;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      transition: $main-transition;
+
+      #resume-button-icon {
+        margin-left: 0.2rem;
+        // color: $background-color-dark;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: linear-gradient(to right, #e443e0, #f9677b, #f78b48);
+      }
+
+      &:active {
+        background: linear-gradient(to right, #6c1e6a, #b12f41, #ba5719);
+      }
+    }
   }
 }
 
