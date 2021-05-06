@@ -13,22 +13,30 @@ class Work extends React.Component {
             <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
             <p>A movie & TV show browsing app.</p>
             <button className='project-card-button'>
-              View
+              <a href='https://snacktime.netlify.app/'>
+                View
+              </a>
             </button>
             <button className='project-card-button'>
-              Code
+              <a href='https://github.com/lux-coded/snack-time'>
+                Code
+              </a>
               {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
             </button>
           </article>
           <article className='project-card'>
-            <h2>MyTune</h2>
+            <h2>TuneSurge</h2>
             <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
             <p>Music browsing app.</p>
             <button className='project-card-button'>
-              View
+              <a href='https://tunesurge.netlify.app/'>
+                View
+              </a>
             </button>
             <button className='project-card-button'>
-              Code
+              <a href='https://github.com/lux-coded/tune-surge'>
+                Code
+              </a>
               {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
             </button>
           </article>

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 #skills-section {
   padding: 5% 0%;
   height: 2000px;
@@ -8,4 +10,15 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
+}
+
+.skill-card-container {
+  margin-top: 2rem;
+}
+
+.skill-card {
+  // background-color: $background-color-dim;
+  background: $main-gradient;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }

@@ -12,7 +12,7 @@ class Header extends React.Component {
           <ion-icon name="logo-github" size='large'></ion-icon>
           <button className='resume-button'>
             Resume
-            <span class="material-icons-outlined" id='resume-button-icon'>
+            <span className="material-icons-outlined" id='resume-button-icon'>
               file_download
             </span>
           </button>
