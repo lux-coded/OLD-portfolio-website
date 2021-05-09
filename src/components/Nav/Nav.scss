@@ -2,12 +2,8 @@
 
 #nav {
   position: relative;
-  // width: 80%;
   display: grid;
-  // display: flex;
-  // justify-content: space-between;
   grid-template-columns: repeat(5, 1fr);
-  // background-color: $background-color-dim;
   background: $main-gradient;
   text-align: center;
   font-size: 1rem;
@@ -37,15 +33,14 @@
     transition: $main-transition;
     text-decoration: none;
     &:hover {
-      color: $main-text-color;
-      background-color: $transparent-dark;
-      // background-color: $secondary-text-color;
+      color: $main-text-color-light;
+      background: $transparent-dim;
       cursor: pointer;
     }
 
     &:active {
-      color: $background-color-dark;
-      background-color: $transparent-light;
+      color: $main-text-color;
+      background: $transparent-light;
 
       // background-color: $background-color-light;
       cursor: pointer;

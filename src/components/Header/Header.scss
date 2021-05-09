@@ -12,7 +12,7 @@ header {
     font-weight: 700;
     font-size: 5rem;
     color: $main-text-color;
-    background: $main-gradient;
+    background: $secondary-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -20,7 +20,7 @@ header {
   h2 {
     font-weight: 500;
     font-size: 2rem;
-    color: $terciary-text-color;
+    color: $main-text-color;
   }
 
   .header-links {
@@ -33,7 +33,7 @@ header {
     transition: $main-transition;
 
     .resume-button {
-      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+      background-color: $main-accent-color;
       // color: $background-color-dark;
       display: flex;
       align-items: center;
@@ -42,19 +42,23 @@ header {
       border-radius: 2rem;
       font-size: 1rem;
       padding: 0.5rem 1rem;
+      transition: $main-transition;
 
       #resume-button-icon {
         margin-left: 0.2rem;
-        // color: $background-color-dark;
       }
 
       &:hover {
         cursor: pointer;
-        background: linear-gradient(to right, #e443e0, #f9677b, #f78b48);
       }
 
       &:active {
-        background: linear-gradient(to right, #6c1e6a, #b12f41, #ba5719);
+        color: $main-text-color-light;
+        background-color: $main-accent-color-hover;
+
+        span {
+          color: $main-text-color-light;
+        }
       }
     }
   }
