@@ -11,7 +11,7 @@ header {
   h1 {
     font-weight: 700;
     font-size: 5rem;
-    color: $main-text-color;
+    // color: $main-text-color;
     background: $secondary-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -20,7 +20,7 @@ header {
   h2 {
     font-weight: 500;
     font-size: 2rem;
-    color: $main-text-color;
+    color: $main-text-color-light;
   }
 
   .header-links {

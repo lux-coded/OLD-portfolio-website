@@ -28,6 +28,10 @@
   box-shadow: 0 0 15px $transparent-dark;
   padding: 2rem;
   border-radius: 0.5rem;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .project-card-button {
