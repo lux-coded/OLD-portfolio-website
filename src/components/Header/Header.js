@@ -9,7 +9,10 @@ class Header extends React.Component {
         <h1>{'<LukaSelak />'}</h1>
         <h2>WebDev</h2>
         <div className='header-links'>
-          <ion-icon name="logo-github" size='large'></ion-icon>
+          <a href='https://github.com/lux-coded'>
+            <ion-icon name="logo-github" size='large' >
+            </ion-icon>
+          </a>
           <button className='resume-button'>
             Resume
             <span className="material-icons-outlined" id='resume-button-icon'>

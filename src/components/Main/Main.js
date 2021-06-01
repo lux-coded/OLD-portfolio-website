@@ -6,6 +6,7 @@ import Work from '../Work/Work.js';
 import Skills from '../Skills/Skills.js';
 import About from '../About/About.js';
 import Contact from '../Contact/Contact.js';
+import Footer from '../Footer/Footer.js';
 import './Main.scss';
 
 class Main extends React.Component {
@@ -21,6 +22,7 @@ class Main extends React.Component {
           <About />
           <Contact />
         </main>
+        <Footer />
         <MobileNav />
       </div>
     );

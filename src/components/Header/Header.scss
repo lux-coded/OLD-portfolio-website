@@ -9,10 +9,11 @@ header {
   // user-select: none; /* Standard */
 
   h1 {
+    display: inline-block;
     font-weight: 700;
     font-size: 5rem;
     // color: $main-text-color;
-    background: $secondary-gradient;
+    background: $main-gradient-light;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -31,6 +32,42 @@ header {
     grid-gap: 1rem;
     width: 0;
     transition: $main-transition;
+
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;  /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+
+      /* Support for all WebKit browsers. */
+      -webkit-font-smoothing: antialiased;
+      /* Support for Safari and Chrome. */
+      text-rendering: optimizeLegibility;
+
+      /* Support for Firefox. */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Support for IE. */
+      font-feature-settings: 'liga';
+    }
+
+    ion-icon {
+      color: white;
+      border-radius: 50%;
+      transition: $main-transition;
+      &:hover {
+        box-shadow: 0px 0px 10px $main-accent-color;
+        color: $main-accent-color;
+        transform: translateY(-2px);
+      }
+    }
 
     .resume-button {
       background-color: $main-accent-color;

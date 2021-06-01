@@ -17,12 +17,31 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   border-radius: 0.5rem;
-  background: $main-gradient;
+  // background: $main-gradient;
+
+  .project-image-container {
+    border: 5px solid $transparent-dim;
+    margin: 1rem 0;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+
+  .project-image {
+    transition: $main-transition;
+    transform: scale(1.05);
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
 
 .project-card {
-  // background-color: $background-color-dim;
-  // background: $main-gradient;
+  background-color: $background-color-dim;
+  background: $main-gradient;
   // -webkit-background-clip: content-box;
   // -webkit-text-fill-color: transparent;
   box-shadow: 0 0 15px $transparent-dark;

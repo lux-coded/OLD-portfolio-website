@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+footer {
+  height: 500px;
+  padding: 5% 15%;
+  background: $transparent-dim;
+  position: relative;
+  .footer-main {
+    padding: 2rem 0;
+  }
+  .footer-info {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .footer-contact {
+    padding: 2rem 0;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 5% 5%;
+    .footer-info {
+      grid-template-columns: 1fr;
+    }
+  }
+}

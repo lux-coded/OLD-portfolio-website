@@ -10,6 +10,11 @@ class Work extends React.Component {
         <div className='project-card-container'>
           <article className='project-card'>
             <h2>SnackTime</h2>
+            <div className='project-image-container'>
+              <a href='https://snacktime.netlify.app/'>
+                <img src='images/snacktime-thumbnail.png' className='project-image' />
+              </a>
+            </div>
             <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
             <p>A movie & TV show browsing app.</p>
             <button className='project-card-button'>
@@ -26,6 +31,11 @@ class Work extends React.Component {
           </article>
           <article className='project-card'>
             <h2>TuneSurge</h2>
+            <div className='project-image-container'>
+              <a href='https://tunesurge.netlify.app/'>
+                <img src='images/tunesurge-thumbnail.PNG' className='project-image' />
+              </a>
+            </div>
             <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
             <p>Music browsing app.</p>
             <button className='project-card-button'>
@@ -42,6 +52,9 @@ class Work extends React.Component {
           </article>
           <article className='project-card'>
             <h2>Bruh</h2>
+            <div className='project-image-container'>
+              <img src='' className='project-image'></img>
+            </div>
             <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
             <p>Bruh.</p>
             <button className='project-card-button'>
@@ -54,6 +67,9 @@ class Work extends React.Component {
           </article>
           <article className='project-card'>
             <h2>Bruh</h2>
+            <div className='project-image-container'>
+              <img src='' className='project-image'></img>
+            </div>
             <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
             <p>Bruh.</p>
             <button className='project-card-button'>
