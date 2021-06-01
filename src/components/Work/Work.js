@@ -34,7 +34,7 @@ class Work extends React.Component {
               </a>
             </button>
             <button className='project-card-button'>
-              <a href='https://github.com/lux-coded/tune-surge'>
+              <a href='https://github.com/lux-coded/tunesurge'>
                 Code
               </a>
               {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
