@@ -12,10 +12,13 @@ class Work extends React.Component {
             <h2>SnackTime</h2>
             <div className='project-image-container'>
               <a href='https://snacktime.netlify.app/'>
-                <img src='images/snacktime-thumbnail.png' className='project-image' />
+                <img src='images/snacktime-thumbnail.png' className='project-image' alt='project_thumbnail' />
               </a>
             </div>
+            <h4>Built with:</h4>
+            <br></br>
             <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
+            <br></br>
             <p>A movie & TV show browsing app.</p>
             <button className='project-card-button'>
               <a href='https://snacktime.netlify.app/'>
@@ -33,11 +36,18 @@ class Work extends React.Component {
             <h2>TuneSurge</h2>
             <div className='project-image-container'>
               <a href='https://tunesurge.netlify.app/'>
-                <img src='images/tunesurge-thumbnail.PNG' className='project-image' />
+                <img src='images/tunesurge-thumbnail.PNG' className='project-image' alt='project_thumbnail' />
               </a>
             </div>
-            <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
+            <h4>Built with:</h4>
+            <br></br>
+            <h5>HTML, CSS, Sass, Javascript, React, Redux, Express, Node</h5>
+            <br></br>
             <p>Music browsing app.</p>
+            <p>
+              (It takes a while for the app to load initially because the server on Heroku is put
+              to sleep after hour of inactivity. Please be patient until the app loads.)
+            </p>
             <button className='project-card-button'>
               <a href='https://tunesurge.netlify.app/'>
                 View
@@ -53,8 +63,10 @@ class Work extends React.Component {
           <article className='project-card'>
             <h2>Bruh</h2>
             <div className='project-image-container'>
-              <img src='' className='project-image'></img>
+              <img src='' className='project-image' alt='project_thumbnail'></img>
             </div>
+            <h4>Built with:</h4>
+            <br></br>
             <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
             <p>Bruh.</p>
             <button className='project-card-button'>
@@ -68,7 +80,7 @@ class Work extends React.Component {
           <article className='project-card'>
             <h2>Bruh</h2>
             <div className='project-image-container'>
-              <img src='' className='project-image'></img>
+              <img src='' className='project-image' alt='project_thumbnail'></img>
             </div>
             <h5>Bruh, bruh, bruh, bruh, bruh, bruh</h5>
             <p>Bruh.</p>
