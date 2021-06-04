@@ -4,6 +4,7 @@
   padding: 5% 0%;
   // height: 2000px;
 
+
   h1 {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -14,11 +15,55 @@
 
 .skill-card-container {
   margin-top: 2rem;
+
+  .skill-icons {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1rem;
+
+    ion-icon {
+      transition: all 0.15s ease-in-out;
+      padding: 2rem;
+      font-size: 72px;
+      width: auto;
+      color: black;
+      background-color: white;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+
 }
 
 .skill-card {
-  // background-color: $background-color-dim;
-  background: $main-gradient;
+  background-color: $background-color-dark;
+  color: $main-text-color-light;
   padding: 2rem;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .skill-card-container {
+    .skill-icons {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skill-card-container {
+    .skill-icons {
+      text-align: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
+  }
 }

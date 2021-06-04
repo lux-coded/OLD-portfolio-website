@@ -40,8 +40,8 @@
 }
 
 .project-card {
-  background-color: $background-color-dim;
-  background: $main-gradient;
+  background-color: $background-color-dark;
+  color: $main-text-color-light;
   // -webkit-background-clip: content-box;
   // -webkit-text-fill-color: transparent;
   box-shadow: 0 0 15px $transparent-dark;
@@ -51,27 +51,64 @@
   a {
     text-decoration: none;
   }
+
+  .tech-tag-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 0.5rem;
+    grid-gap: 0.5rem;
+
+    .tech-tag {
+      text-align: center;
+      background-color: $background-color-lightest;
+      color: $main-text-color;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: $main-transition;
+
+      &:hover {
+        background-color: black;
+        color: $main-text-color-light;
+        user-select: none;
+
+        a {
+          color: $main-text-color-light;
+        }
+      }
+    }
+  }
+
+
 }
 
 .project-card-button {
-  background-color: $transparent-dim;
+  background-color: $background-color-lightest;
   // width: 10rem;
+  text-decoration: none;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 2rem;
   transition: $main-transition;
+
+  a {
+    color: $main-text-color;
+  }
 
   &:hover {
     cursor: pointer;
-    background-color: $transparent-dark;
+    background-color: black;
+    color: $main-text-color-light;
+
+    a {
+      color: $main-text-color-light;
+    }
   }
 
   &:active {
     background-color: $transparent-light;
-    color: $background-color-dark;
   }
 }
 

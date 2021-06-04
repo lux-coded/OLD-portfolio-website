@@ -21,7 +21,7 @@ header {
   h2 {
     font-weight: 500;
     font-size: 2rem;
-    color: $main-text-color-light;
+    color: $main-text-color;
   }
 
   .header-links {
@@ -59,7 +59,7 @@ header {
     }
 
     ion-icon {
-      color: white;
+      color: black;
       border-radius: 50%;
       transition: $main-transition;
       &:hover {

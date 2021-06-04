@@ -17,7 +17,14 @@ class Work extends React.Component {
             </div>
             <h4>Built with:</h4>
             <br></br>
-            <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
+            <div className='tech-tag-container'>
+              <p className='tech-tag'>HTML</p>
+              <p className='tech-tag'>CSS</p>
+              <p className='tech-tag'>Sass</p>
+              <p className='tech-tag'>Javascript</p>
+              <p className='tech-tag'>React</p>
+              <p className='tech-tag'>Redux</p>
+            </div>
             <br></br>
             <p>A movie & TV show browsing app.</p>
             <button className='project-card-button'>
@@ -41,7 +48,16 @@ class Work extends React.Component {
             </div>
             <h4>Built with:</h4>
             <br></br>
-            <h5>HTML, CSS, Sass, Javascript, React, Redux, Express, Node</h5>
+            <div className='tech-tag-container'>
+              <p className='tech-tag'>HTML</p>
+              <p className='tech-tag'>CSS</p>
+              <p className='tech-tag'>Sass</p>
+              <p className='tech-tag'>Javascript</p>
+              <p className='tech-tag'>React</p>
+              <p className='tech-tag'>Redux</p>
+              <p className='tech-tag'>Express</p>
+              <p className='tech-tag'>Node</p>
+            </div>
             <br></br>
             <p>Music browsing app.</p>
             <p>

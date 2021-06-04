@@ -9,9 +9,16 @@ class Skills extends React.Component {
         <h1>Skills</h1>
         <div className='skill-card-container'>
           <article className='skill-card'>
-            <h2>Javascript, React</h2>
-            <h5>HTML, CSS, Sass, Javascript, React, Redux</h5>
-            <p>A movie & TV show browsing app.</p>
+            <div className='skill-icons'>
+              <ion-icon value='' name="logo-html5"></ion-icon>
+              <ion-icon value='' name="logo-css3"></ion-icon>
+              <ion-icon value='' name="logo-javascript"></ion-icon>
+              <ion-icon value='' name="logo-sass"></ion-icon>
+              <ion-icon value='' name="logo-react"></ion-icon>
+              <ion-icon value='' name="logo-nodejs"></ion-icon>
+              <ion-icon value='' name="logo-github"></ion-icon>
+              <ion-icon value='' name="logo-electron"></ion-icon>
+            </div>
           </article>
         </div>
       </section>

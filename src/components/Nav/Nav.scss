@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background: $main-gradient;
+  background: black;
   text-align: center;
   font-size: 1rem;
   margin: 0 15%;
@@ -29,20 +29,12 @@
     padding: 10px 20px;
     border-radius: 5px;
     // color: $terciary-text-color;
-    color: $background-color-dark;
+    color: $main-text-color-light;
     transition: $main-transition;
     text-decoration: none;
     &:hover {
-      color: $main-text-color-light;
-      background: $transparent-dim;
-      cursor: pointer;
-    }
-
-    &:active {
       color: $main-text-color;
-      background: $transparent-light;
-
-      // background-color: $background-color-light;
+      background: $background-color-light;
       cursor: pointer;
     }
   }
