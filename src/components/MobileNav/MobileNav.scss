@@ -14,9 +14,10 @@
   .burger-icon {
     padding: 0.5rem;
     border-radius: 5px;
-    background: $nav-background;
+    background: $main-accent-color;
     color: $main-text-color;
     box-shadow: 0px 0px 10px $transparent-dark;
+    user-select: none;
 
     &:hover {
       color: $background-color-dark;
@@ -41,24 +42,21 @@
   position: absolute;
   right: 0rem;
   bottom: 3rem;
-  background: $nav-background;
+  background: $main-gradient;
   border-radius: 5px;
-
-
+  user-select: none;
 
   a, span {
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
-    color: $background-color-dark;
-
+    color: black;
     text-decoration: none;
 
     &:hover {
-      color: $background-color-dark;
-      background-color: $transparent-dim;
+      color: white;
+      background: $transparent-dim;
       cursor: pointer;
-      transition: $main-transition;
     }
 
     &:active {
@@ -71,5 +69,4 @@
 
 #back-to-top {
   text-transform: none;
-
 }

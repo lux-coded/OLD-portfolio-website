@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background: black;
+  background: $main-gradient;
   text-align: center;
   font-size: 1rem;
   margin: 0 15%;
@@ -28,13 +28,13 @@
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
-    // color: $terciary-text-color;
-    color: $main-text-color-light;
+    color: $main-text-color;
+    // color: $main-text-color-light;
     transition: $main-transition;
     text-decoration: none;
     &:hover {
-      color: $main-text-color;
-      background: $background-color-light;
+      color: $main-text-color-light;
+      background: $transparent-dim;
       cursor: pointer;
     }
   }
@@ -44,21 +44,16 @@
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0);
     color: $main-text-color;
-    cursor: pointer;
 
     &:hover {
-      color: $background-color-dark;
-      background-color: $transparent-light;
       cursor: pointer;
     }
 
     &:active {
-      color: $main-text-color;
-      background-color: $transparent-dark;
-      cursor: pointer;
+      color: white;
+      background-color: black;
     }
   }
-
 }
 
 @media (max-width: 900px) {

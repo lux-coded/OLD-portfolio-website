@@ -8,8 +8,7 @@ class Footer extends React.Component {
       <footer>
         <div className='footer-info'>
           <div className='footer-main'>
-            <h1>Luka Selak</h1>
-            <p>Hello</p>
+            <h1>Wanna work together?</h1>
           </div>
           <div className='footer-contact'>
             <h2>Contact:</h2>

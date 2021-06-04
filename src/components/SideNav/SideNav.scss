@@ -7,7 +7,7 @@
 #side-nav {
   display: grid;
   font-size: 1.2rem;
-  background: $nav-background;
+  background: $main-gradient;
   border-radius: 5px;
 
 
@@ -20,15 +20,14 @@
     // text-decoration: none;
 
     &:hover {
-      color: $background-color-dark;
+      color: white;
       background-color: $transparent-dim;
       cursor: pointer;
     }
 
     &:active {
-      color: $background-color-dark;
+      color: black;
       background-color: $transparent-light;
-      cursor: pointer;
     }
   }
 }

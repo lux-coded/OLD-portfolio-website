@@ -1,5 +1,6 @@
 #about-section {
-  padding: 5% 0%;
+  padding: 5% 15%;
+  color: white;
   // height: 2000px;
 
   h1 {
@@ -7,5 +8,11 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about-section {
+    padding: 5%;
   }
 }

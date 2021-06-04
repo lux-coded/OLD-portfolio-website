@@ -3,6 +3,7 @@
 header {
   text-align: left;
   padding: 10% 15%;
+  height: 100vh;
   // -webkit-user-select: none; /* Safari */
   // -moz-user-select: none; /* Firefox */
   // -ms-user-select: none; /* IE10+/Edge */
@@ -10,8 +11,8 @@ header {
 
   h1 {
     display: inline-block;
-    font-weight: 700;
-    font-size: 5rem;
+    font-weight: 400;
+    font-size: 6rem;
     // color: $main-text-color;
     background: $main-gradient-light;
     -webkit-background-clip: text;
@@ -21,7 +22,9 @@ header {
   h2 {
     font-weight: 500;
     font-size: 2rem;
-    color: $main-text-color;
+    background: $main-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .header-links {
@@ -59,7 +62,7 @@ header {
     }
 
     ion-icon {
-      color: black;
+      color: white;
       border-radius: 50%;
       transition: $main-transition;
       &:hover {
@@ -70,7 +73,7 @@ header {
     }
 
     .resume-button {
-      background-color: $main-accent-color;
+      background-color: white;
       // color: $background-color-dark;
       display: flex;
       align-items: center;
@@ -91,7 +94,8 @@ header {
 
       &:active {
         color: $main-text-color-light;
-        background-color: $main-accent-color-hover;
+        background-color: black;
+        box-shadow: 0 0 10px white;
 
         span {
           color: $main-text-color-light;
@@ -104,8 +108,9 @@ header {
 @media (max-width: 900px) {
   header {
     padding: 10% 5%;
+    height: 60vh;
     h1 {
-      font-size: 2.2rem;
+      font-size: 3rem;
       padding: 0;
     }
 

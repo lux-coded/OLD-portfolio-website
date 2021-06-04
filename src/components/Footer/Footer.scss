@@ -3,7 +3,8 @@
 footer {
   height: 500px;
   padding: 5% 15%;
-  background: $transparent-dim;
+  border-top: 5px solid white;
+  color: white;
   position: relative;
   .footer-main {
     padding: 2rem 0;

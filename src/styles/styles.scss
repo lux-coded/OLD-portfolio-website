@@ -14,7 +14,11 @@ html {
 }
 
 body {
-  background-color: $background-color-lightest;
+  background-color: rgb(15, 15, 15);
+
+  h4 {
+    font-weight: 900;
+  }
 
   &:after {
     // opacity: 0.7;

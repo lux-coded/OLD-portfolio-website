@@ -1,13 +1,16 @@
 @import '../../styles/variables.scss';
 
 #work-section {
-  padding: 5% 0%;
-
+  padding: 5% 15%;
+  color: white;
   h1 {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    background: $main-gradient-light;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -15,15 +18,95 @@
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   border-radius: 0.5rem;
-  // background: $main-gradient;
+  background: $main-gradient;
+
+  .project-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .project-button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+    align-items: center;
+  }
+
+  .project-card {
+    // background: $main-gradient;
+    color: black;
+    -webkit-background-clip: content-box;
+    // -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 25px $transparent-dim;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: $main-transition;
+
+    .project-card-button {
+      background-color: $transparent-dark;
+      // width: 10rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      padding: 0.75rem 2rem;
+      transition: $main-transition;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $transparent-light;
+        color: black;
+
+        a {
+          color: black;
+        }
+      }
+
+      &:active {
+        background-color: $transparent-light;
+      }
+    }
+
+    .tech-tag-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-radius: 0.5rem;
+      grid-gap: 0.5rem;
+
+      .tech-tag {
+        text-align: center;
+        background-color: $transparent-dark;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: $main-transition;
+
+        &:hover {
+          background-color: white;
+          color: black;
+          user-select: none;
+
+          a {
+            color: $main-text-color-light;
+          }
+        }
+      }
+    }
+  }
 
   .project-image-container {
-    border: 5px solid $transparent-dim;
+    border: 5px solid black;
     margin: 1rem 0;
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 175px;
     overflow: hidden;
     border-radius: 0.5rem;
   }
@@ -39,83 +122,63 @@
   }
 }
 
-.project-card {
-  background-color: $background-color-dark;
-  color: $main-text-color-light;
-  // -webkit-background-clip: content-box;
-  // -webkit-text-fill-color: transparent;
-  box-shadow: 0 0 15px $transparent-dark;
-  padding: 2rem;
-  border-radius: 0.5rem;
+@media screen and (max-width: 1500px) {
+  #work-section {
+    padding: 5% 5%;
 
-  a {
-    text-decoration: none;
-  }
-
-  .tech-tag-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border-radius: 0.5rem;
-    grid-gap: 0.5rem;
-
-    .tech-tag {
-      text-align: center;
-      background-color: $background-color-lightest;
-      color: $main-text-color;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      transition: $main-transition;
-
-      &:hover {
-        background-color: black;
-        color: $main-text-color-light;
-        user-select: none;
-
-        a {
-          color: $main-text-color-light;
-        }
-      }
-    }
-  }
-
-
-}
-
-.project-card-button {
-  background-color: $background-color-lightest;
-  // width: 10rem;
-  text-decoration: none;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  padding: 0.75rem 2rem;
-  transition: $main-transition;
-
-  a {
-    color: $main-text-color;
-  }
-
-  &:hover {
-    cursor: pointer;
-    background-color: black;
-    color: $main-text-color-light;
-
-    a {
-      color: $main-text-color-light;
-    }
-  }
-
-  &:active {
-    background-color: $transparent-light;
   }
 }
 
-@media (max-width: 900px) {
-  .project-card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+@media screen and (max-width: 1200px) {
+  #work-section {
+    .project-card {
+      padding: 2rem 1rem;
+    }
+    .project-header {
+      grid-template-columns: 1fr;
+    }
+    .tech-tag-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #work-section {
+    .project-card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .tech-tag-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  #work-section {
+    padding: 5%;
+    .project-image-container {
+      margin: 1rem 0;
+      width: 350px;
+      height: 200px;
+    }
+    .project-card-container {
+      grid-template-columns: 1fr;
+    }
+    .project-card {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #work-section {
+    .project-image-container {
+      width: 250px;
+      height: 125px;
+    }
   }
 }

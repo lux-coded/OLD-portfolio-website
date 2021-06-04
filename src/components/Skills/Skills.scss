@@ -1,7 +1,8 @@
 @import '../../styles/variables.scss';
 
 #skills-section {
-  padding: 5% 0%;
+  padding: 5% 15%;
+  color: white;
   // height: 2000px;
 
 
@@ -27,11 +28,11 @@
       font-size: 72px;
       width: auto;
       color: black;
-      background-color: white;
+      background-color: transparent;
       border-radius: 0.5rem;
 
       &:hover {
-        background-color: black;
+        background-color: $transparent-dark;
         color: white;
       }
     }
@@ -41,29 +42,35 @@
 }
 
 .skill-card {
-  background-color: $background-color-dark;
+  background: $main-gradient;
   color: $main-text-color-light;
   padding: 2rem;
   border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 1500px) {
-  .skill-card-container {
-    .skill-icons {
-      grid-template-columns: repeat(4, 1fr);
+  #skills-section {
+    padding: 5%;
+    .skill-card-container {
+      .skill-icons {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
-
-
   }
 }
 
 @media screen and (max-width: 800px) {
-  .skill-card-container {
-    .skill-icons {
-      text-align: center;
-      grid-template-columns: repeat(2, 1fr);
+  #skills-section {
+    padding: 5%;
+    .skill-card-container {
+      .skill-card {
+        padding: 1rem;
+      }
+      .skill-icons {
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
-
-
   }
+
 }
