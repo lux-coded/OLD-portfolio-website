@@ -13,17 +13,13 @@ class Work extends React.Component {
             <div className='project-header'>
               <h2>SnackTime</h2>
               <div className='project-button-container'>
-                <button className='project-card-button'>
-                  <a href='https://snacktime.netlify.app/'>
-                    View
-                  </a>
-                </button>
-                <button className='project-card-button'>
-                  <a href='https://github.com/lux-coded/snack-time'>
-                    Code
-                  </a>
-                  {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
-                </button>
+                <a className='project-card-button' href='https://snacktime.netlify.app/'>
+                  View
+                </a>
+                <a className='project-card-button' href='https://github.com/lux-coded/snack-time'>
+                  Code
+                </a>
+                {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
               </div>
             </div>
             <div className='project-image-container'>
@@ -49,17 +45,13 @@ class Work extends React.Component {
             <div className='project-header'>
               <h2>TuneSurge</h2>
               <div className='project-button-container'>
-                <button className='project-card-button'>
-                  <a href='https://tunesurge.netlify.app/'>
-                    View
-                  </a>
-                </button>
-                <button className='project-card-button'>
-                  <a href='https://github.com/lux-coded/tunesurge'>
-                    Code
-                  </a>
-                  {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
-                </button>
+                <a className='project-card-button' href='https://tunesurge.netlify.app/'>
+                  View
+                </a>
+                <a className='project-card-button' href='https://github.com/lux-coded/tunesurge'>
+                  Code
+                </a>
+                {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
               </div>
             </div>
             <div className='project-image-container'>
@@ -91,17 +83,13 @@ class Work extends React.Component {
             <div className='project-header'>
               <h2>eStore</h2>
               <div className='project-button-container'>
-                <button className='project-card-button'>
-                  <a href='https://e-store-commerce.netlify.app/'>
-                    View
-                  </a>
-                </button>
-                <button className='project-card-button'>
-                  <a href='https://github.com/lux-coded/e-store'>
-                    Code
-                  </a>
-                  {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
-                </button>
+                <a className='project-card-button' href='https://e-store-commerce.netlify.app/'>
+                  View
+                </a>
+                <a className='project-card-button' href='https://github.com/lux-coded/e-store'>
+                  Code
+                </a>
+                {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
               </div>
             </div>
             <div className='project-image-container'>
