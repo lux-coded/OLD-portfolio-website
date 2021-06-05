@@ -16,7 +16,7 @@ class Header extends React.Component {
           <a href='https://www.linkedin.com/in/luka-selak-604b49213/'>
             <ion-icon name="logo-linkedin" size='large'></ion-icon>
           </a>
-          <a href='https://docs.google.com/document/d/1l36WMuu62eoXsxdR7YQYlyWCDPKpzCg132ozUMAtdMc/edit?usp=sharing' className='resume-button'>
+          <a href='https://drive.google.com/file/d/11YxcZdJoMbMopzNq7s7__DwTYQx7fXJv/view?usp=sharing' className='resume-button'>
             Resume
             <span className="material-icons-outlined" id='resume-button-icon'>
               file_download
