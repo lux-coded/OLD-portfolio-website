@@ -6,9 +6,10 @@ class About extends React.Component {
   render() {
     return (
       <section id='about-section'>
-        <h1>About</h1>
+        <h1 className='section-title'>About</h1>
+        <hr />
         <br />
-        <p style={{ textAlign: 'center' }}>Greetings,
+        <p style={{ textAlign: 'center', paddingTop: '5%' }}>Greetings,
           <br />
           <br />
           My name is Luka and I am a Front End Web Developer.

@@ -6,7 +6,8 @@ class Work extends React.Component {
   render() {
     return (
       <section id='work-section'>
-        <h1 className='section-title'>Stuff I've Worked On...</h1>
+        <h1 className='section-title'>My Work</h1>
+        <hr />
         <div className='project-card-container'>
           <article className='project-card'>
             <div className='project-header'>

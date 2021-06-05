@@ -3,14 +3,21 @@
 #work-section {
   padding: 5% 15%;
   color: white;
+
+  hr {
+    background: $main-gradient-light;
+    border: none;
+    border-radius: 0.5rem;
+    height: 5px;
+  }
+
   .section-title {
+    display: inline-block;
+    color: white;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    background: $main-gradient-light;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -18,7 +25,7 @@
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   border-radius: 0.5rem;
   background: $main-gradient;
 
@@ -40,33 +47,35 @@
     color: white;
     -webkit-background-clip: content-box;
     // -webkit-text-fill-color: transparent;
-    box-shadow: 0 0 25px $transparent-dim;
+    box-shadow: 0 0 25px $transparent-dark;
     padding: 2rem;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     transition: $main-transition;
 
     .project-card-button {
-      background-color: $transparent-dark;
-      // width: 10rem;
-      text-decoration: none;
+      background-color: white;
+      color: $main-accent-color;
       border: none;
+      display: flex;
+      align-items: center;
+      text-align: center;
       border-radius: 0.5rem;
       font-size: 1rem;
-      padding: 0.75rem 2rem;
+      padding: 0.25rem 1rem;
+      text-decoration: none;
       transition: $main-transition;
 
       a {
         text-decoration: none;
-        color: white;
+        color: $main-accent-color;
       }
 
       &:hover {
         cursor: pointer;
-        background-color: $transparent-light;
+        background-color: rgba(15, 15, 15, 0.15);
         color: black;
-
         a {
-          color: black;
+          color: white;
         }
       }
 
@@ -82,12 +91,18 @@
       grid-gap: 0.5rem;
 
       .tech-tag {
-        text-align: center;
-        background-color: $transparent-dark;
-        color: white;
-        padding: 0.5rem 1rem;
+        background-color: white;
+        color: $main-accent-color;
+        display: flex;
+        align-items: center;
         border-radius: 0.5rem;
+        font-size: 1rem;
+        padding: 0.25rem 1rem;
+        text-decoration: none;
         transition: $main-transition;
+
+        p {
+        }
 
         &:hover {
           background-color: white;

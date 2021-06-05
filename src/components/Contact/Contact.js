@@ -6,7 +6,8 @@ class Contact extends React.Component {
   render() {
     return (
       <section id='contact-section'>
-        <h1>Contact</h1>
+        <h1 className='section-title'>Contact</h1>
+        <hr />
       </section>
     );
   }

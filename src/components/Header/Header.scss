@@ -23,7 +23,7 @@ header {
     margin-top: 2rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     width: 0;
     transition: $main-transition;
@@ -53,27 +53,33 @@ header {
       font-feature-settings: 'liga';
     }
 
-    ion-icon {
-      color: white;
+    #github-icon {
       border-radius: 50%;
+    }
+
+    ion-icon {
+      color: $main-accent-color;
       transition: $main-transition;
+      border: 2px solid $main-accent-color;
       &:hover {
+        cursor: pointer;
         box-shadow: 0px 0px 10px $main-accent-color;
-        color: $main-accent-color;
+        color: white;
         transform: translateY(-2px);
       }
     }
 
     .resume-button {
-      background-color: white;
-      // color: $background-color-dark;
+      background-color: transparent;
+      border: 4px solid $main-accent-color;
+      color: $main-accent-color;
       display: flex;
       align-items: center;
       text-align: center;
-      border: none;
       border-radius: 2rem;
       font-size: 1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 1rem;
+      text-decoration: none;
       transition: $main-transition;
 
       #resume-button-icon {
@@ -82,6 +88,10 @@ header {
 
       &:hover {
         cursor: pointer;
+        box-shadow: 0px 0px 15px $main-accent-color;
+        background-color: white;
+        color: black;
+        transform: translateY(-2px);
       }
 
       &:active {
@@ -100,14 +110,10 @@ header {
 @media (max-width: 900px) {
   header {
     padding: 10% 5%;
-    height: 60vh;
+    height: 40vh;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       padding: 0;
-    }
-
-    h2 {
-      font-size: 1.5rem;
     }
   }
 }

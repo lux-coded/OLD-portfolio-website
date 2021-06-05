@@ -1,12 +1,29 @@
+@import '../../styles/variables.scss';
+
 #contact-section {
   padding: 5% 15%;
   color: white;
   // height: 2000px;
 
-  h1 {
+  hr {
+    background: $main-gradient-light;
+    border: none;
+    border-radius: 0.5rem;
+    height: 5px;
+  }
+
+  .section-title {
+    display: inline-block;
+    color: white;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #contact-section {
+    padding: 5%;
   }
 }

@@ -3,15 +3,16 @@
 footer {
   height: 500px;
   padding: 5% 15%;
-  border-top: 5px solid white;
   color: white;
   position: relative;
+  text-align: center;
+  
   .footer-main {
     padding: 2rem 0;
   }
   .footer-info {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
+    display: flex;
+    justify-content: space-between;
 
     h1 {
       margin-bottom: 2rem;
@@ -30,11 +31,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  footer {
+    .footer-info {
+      display: block;
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   footer {
     padding: 5% 5%;
     .footer-info {
-      grid-template-columns: 1fr;
+      display: block;
     }
   }
 }

@@ -6,7 +6,8 @@ class Skills extends React.Component {
   render() {
     return (
       <section id='skills-section'>
-        <h1>Skills</h1>
+        <h1 className='section-title'>Skills</h1>
+        <hr />
         <div className='skill-card-container'>
           <article className='skill-card'>
             <div className='skill-icons'>

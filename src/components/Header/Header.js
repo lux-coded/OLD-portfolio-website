@@ -11,15 +11,17 @@ class Header extends React.Component {
         <h1 style={{ fontWeight: '300' }}>Web Developer</h1>
         <div className='header-links'>
           <a href='https://github.com/lux-coded'>
-            <ion-icon name="logo-github" size='large' >
-            </ion-icon>
+            <ion-icon id='github-icon' name="logo-github" size='large'></ion-icon>
           </a>
-          <button className='resume-button'>
+          <a href='https://www.linkedin.com/in/luka-selak-604b49213/'>
+            <ion-icon name="logo-linkedin" size='large'></ion-icon>
+          </a>
+          <a href='https://drive.google.com/file/d/159g2mmRZFJLu4hhu4OquL1bKNUbhe5yJ/view?usp=sharing' className='resume-button'>
             Resume
             <span className="material-icons-outlined" id='resume-button-icon'>
               file_download
             </span>
-          </button>
+          </a>
         </div>
 
       </header>
