@@ -6,7 +6,7 @@ class Work extends React.Component {
   render() {
     return (
       <section id='work-section'>
-        <h1>Stuff I've Worked On...</h1>
+        <h1 className='section-title'>Stuff I've Worked On...</h1>
         <div className='project-card-container'>
           <article className='project-card'>
             <div className='project-header'>
@@ -119,6 +119,9 @@ class Work extends React.Component {
             </div>
             <br></br>
             <p>E-Commerce store integrated with Stripe for technology purchases.</p>
+          </article>
+          <article className='project-card'>
+              <h1>Loading...</h1>
           </article>
         </div>
       </section>

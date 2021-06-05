@@ -6,9 +6,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>Luka Selak</h1>
+        <h1 style={{ fontWeight: '800' }}>Luka Selak</h1>
         <br></br>
-        <h1>Web Dev</h1>
+        <h1 style={{ fontWeight: '300' }}>Web Developer</h1>
         <div className='header-links'>
           <a href='https://github.com/lux-coded'>
             <ion-icon name="logo-github" size='large' >

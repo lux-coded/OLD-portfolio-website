@@ -17,7 +17,7 @@ class Skills extends React.Component {
               <ion-icon name="logo-react"></ion-icon>
               <ion-icon name="logo-nodejs"></ion-icon>
               <ion-icon name="logo-github"></ion-icon>
-              <ion-icon name="logo-electron"></ion-icon>
+              <ion-icon name="logo-python"></ion-icon>
             </div>
           </article>
         </div>
