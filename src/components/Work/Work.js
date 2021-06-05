@@ -105,7 +105,9 @@ class Work extends React.Component {
               </div>
             </div>
             <div className='project-image-container'>
-              <img src='https://d33wubrfki0l68.cloudfront.net/60ba97900bf73210925fc925/screenshot_2021-06-04-21-15-42-0000.png' className='project-image' alt='project_thumbnail'></img>
+              <a href='https://e-store-commerce.netlify.app/'>
+                <img src='https://d33wubrfki0l68.cloudfront.net/60ba97900bf73210925fc925/screenshot_2021-06-04-21-15-42-0000.png' className='project-image' alt='project_thumbnail' />
+              </a>
             </div>
             <h4>Built with:</h4>
             <br></br>
