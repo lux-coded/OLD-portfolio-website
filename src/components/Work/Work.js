@@ -112,7 +112,34 @@ class Work extends React.Component {
             <p>E-Commerce store integrated with Stripe for technology purchases.</p>
           </article>
           <article className='project-card'>
-              <h1>Loading...</h1>
+            <div className='project-header'>
+              <h2>Japan</h2>
+              <div className='project-button-container'>
+                <a className='project-card-button' href='https://visiting-japan.netlify.app/'>
+                  View
+                </a>
+                <a className='project-card-button' href='https://github.com/lux-coded/japan-tour-guide'>
+                  Code
+                </a>
+                {/* <ion-icon name="code-outline" size='large'></ion-icon> */}
+              </div>
+            </div>
+            <div className='project-image-container'>
+              <a href='https://visiting-japan.netlify.app/'>
+                <img src='https://d33wubrfki0l68.cloudfront.net/60c4bfb16748be0007bcdedc/screenshot_2021-06-12-14-08-11-0000.png' className='project-image' alt='project_thumbnail' />
+              </a>
+            </div>
+            <h4>Built with:</h4>
+            <br></br>
+            <div className='tech-tag-container'>
+              <p className='tech-tag'>HTML</p>
+              <p className='tech-tag'>CSS</p>
+              <p className='tech-tag'>Sass</p>
+              <p className='tech-tag'>Javascript</p>
+              <p className='tech-tag'>React</p>
+            </div>
+            <br></br>
+            <p>Beautiful Japan checklist website.</p>
           </article>
         </div>
       </section>
